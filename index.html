@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey form</title>
+	<link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1 id="title" class="text-center">Survey Form</h1>
+		<p id="description" class="text-center"> Feel free to answer the question below based on your own experience and knowledge.</p>
+	</header>
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label">Your Name</label>
+			<input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+		</div>
+		<div class="form-group">
+			<label id="email-label">Email</label>
+			<input id="email" class="form-control" type="email" name="email" placeholder="Enter your email" required>
+		</div>
+		<div class="form-group">
+			<label id="number-label">Your phone number</label>
+			<input id="number" class="form-control" type="String" name="phone-number" placeholder="Enter your number">
+		</div>
+		<div class="form-group">
+			<p>Where Do you live</p>
+			<select class="form-control" name="place" required>
+				<option disabled selected value>Select</option>
+				<option value="almora">Almora</option>
+				<option value="dehradun">Dehradun</option>
+				<option value="pauri">Pauri</option>
+				<option value="Ranikhet">Ranikhet</option>
+				<option value="Rishikes"> Rishikesh</option>
+				<option value="chopta">Chopta</option>
+			</select>
+		</div>
+    <fieldset>
+      <legend>Age</legend>
+      <div class="form-group">        
+        <label>
+          <input type="radio" name="age" value="15-23"> 15-23
+      </label><br>
+      <label>
+          <input type="radio" name="age" value="18_24"> 18-24
+      </label><br>
+      <label>
+          <input type="radio" name="age" value="25_34"> 25-34
+      </label><br>
+      <label>
+          <input type="radio" name="age" value="35_44"> 35-44
+      </label><br>
+      <label>
+          <input type="radio" name="age" value="45_54"> 45-54
+      </label>
+      </div>
+    </fieldset>
+		<div class="form-group">
+			<p>How would you rate your proficiency in coding </p>
+			<label>
+				<input class="input-radio-site" name="Beginner" value="Beginner" type="radio" checked>
+				Beginner
+			</label>
+			<label>
+				<input class="input-radio-site" name= "Intermediate" value="Intermediate" type="radio" checked>
+				Intermediate
+			</label>
+			<label>
+				<input class="input-radio-site" name="Expert" value="Expert" type="radio" checked>
+				Expert
+			</label>
+		</div>
+		<div class="form-group">
+			<p>What is your favorite feature of</p>
+			<select id="dropdown" class="form-control" name="favorite" required>
+				<option disabled selected value>Select an option</option>
+				<option value="java">Java Repositories</option>
+				<option value="c-plus-plus">C++ Repositories</option>
+				<option value="python">Python Repositories</option>
+				<option value="jupyter">Jupyter Notebook Repositories</option>
+				<option value="html">HTML Repositories</option>
+				<option value="css">CSS Repositories</option>
+				<option value="js">JavaScript Repositories</option>
+			</select>
+
+      <div class="form-group">
+        <p>Have you ever applied in coding contest </p>
+        <label>
+          <input class="input-radio-site" name="yes" value="yes" type="radio" checked>
+          Yes
+        </label>
+        <label>
+          <input class="input-radio-site" name= "No" value="no" type="radio" checked>
+          No
+        </label>
+        </div>
+
+		</div>
+		<div class="form-group">
+			<p>Any project idea?</p>
+			<textarea id="project-ideas" class="input-textarea-idea" name="project-idea" placeholder="Enter your project idea here..."></textarea>
+		</div>
+		<div class="form-group">
+			<p>What are the some of the challenges you have faced while your coding journey ?</p>
+			<textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+		</div>
+		<div class="form-group">
+			<button id="submit" class="submit-button" type="submit">Submit</button>
+		</div>
+	</form>
+
+</body>
+</html>
